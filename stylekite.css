@@ -1,0 +1,179 @@
+body {
+    background-color: lightblue;
+    margin: 16px;
+    border: 8px;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(201, 228, 252);
+    font-size: 25px;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+section {
+    background-color: azure;
+}
+
+h1 {
+    color: rgb(223, 20, 230);
+}
+
+h2 {
+    color: blue;
+    margin: 8px;
+}
+
+h3 {
+    color: deeppink;
+    border-style: dotted;
+    border-color: gray;
+    text-align: center;
+}
+
+h4 {
+    color: blueviolet;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+p {
+    color: black;
+    font: 15px Arial, serif;
+
+    margin: 5px;
+    border: 8px;
+    padding: 3px;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.flexcontainer {
+    display: flex;
+    background-color: #ffffcd;
+}
+
+.box1 {
+    background-color: #87CEFA;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.box2 {
+    background-color: aquamarine;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.box3 {
+    background-color: #e0a999;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.box4 {
+    background-color: plum;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    border: 4px solid blue;
+}
+
+footer {
+    padding: 10px;
+    background: rgb(201, 228, 252);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.3fr 1fr 0.5fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Header Header Header Header"
+        "H2 H2 H2 H2"
+        "jip kort botje dora"
+        "Footer Footer Footer Footer";
+}
+
+.Header {
+    grid-area: Header;
+}
+
+.H2 {
+    grid-area: H2;
+}
+
+.jip {
+    grid-area: jip;
+}
+
+.kort {
+    grid-area: kort;
+}
+
+.botje {
+    grid-area: botje;
+}
+
+.dora {
+    grid-area: dora;
+}
+
+.Footer {
+    grid-area: Footer;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #99d0e0;
+    }
+
+    p {
+        font-size: large;
+        line-height: 1, 5;
+    }
+}
+
+@media (min-width: 600px) {
+
+    /*mobiel*/
+    video {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    /*desktop*/
+}
